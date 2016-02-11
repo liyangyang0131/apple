@@ -1,0 +1,382 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Helvetica Neue LT Pro";
+    background:#f2f2f2;
+}
+h1,h2,h3,h4,h5,h6,span,ul,li{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-weight:normal;
+}
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    background:#333;
+    height:44px;
+    color:#fff;
+    text-align: center;
+    font-weight:100;
+    font-size:16px;
+}
+.header-center{
+    max-width:1024px;
+    margin:0 auto;
+    line-height:44px;
+}
+.header1 .row>a,.header1 .row>div{
+    display: block;
+    height:44px;
+    cursor: pointer;
+}
+.header2 .row>div,.header2>.row>a{
+    display:block;
+    height:44px;
+    line-height:44px;
+    cursor: pointer;
+}
+.header2{
+    display:none;
+}
+.lists{
+    width:300%;
+    background:#333;
+    padding:20px 50px;
+    display: none;
+}
+.list{
+    display:block;
+    width:95%;
+    height:48px;
+    margin:0 auto;
+    border-bottom:2px solid #525252;
+    text-align:left;
+    line-height:48px;
+    color:#fff;
+}
+.list:hover{
+    color:#595959;
+}
+.search{
+    display:block;
+    width:47px;
+    height:48px;
+    background:url(../images/search.svg) center no-repeat;
+    float:left;
+}
+.search:before,.search:after{
+    content:"";
+    display: block;
+}
+.search:after{
+    clear:both;
+}
+/*----------------banner图--------------------*/
+.background{
+    display:block;
+    width:100%;
+    height:391px;
+    background:#fff;
+    position:relative;
+    overflow: hidden;
+}
+.chang{
+    width:500%;
+}
+
+.banner{
+    width:20%;
+    height:391px;
+    float:left;
+}
+.word{
+    width:100%;
+    text-align: center;
+    color:#333;
+    font-weight:200;
+    padding-top:20px;
+}
+.word h1{
+    font-size:36px;
+    line-height:60px;
+}
+.word h2{
+    font-size:20px;
+    line-height:20px;
+}
+.word span{
+    font-size:12px;
+    color:#08c;
+    line-height:20px;
+}
+.word span:hover{
+    color:#333;
+}
+.banner:nth-child(1){
+    background:#F7F7F7 url(../images/small1.png) no-repeat center;
+    background-size: auto 391px;
+}
+.banner:nth-child(2){
+    background:#fff url(../images/small2.jpg) no-repeat center bottom;
+    background-size: 300px;
+}
+.banner:nth-child(3){
+    background:#fff url(../images/small3.jpg) no-repeat center bottom;
+    background-size: 300px;
+}
+.banner:nth-child(4){
+    background:#fff url(../images/small4.png) no-repeat center bottom;
+    background-size: 300px;
+}
+.banner:nth-child(5){
+    background:#F7F7F7 url(../images/small1.png) no-repeat center;
+    background-size: auto 391px;
+}
+
+/*苹果手表*/
+.apple_watch{
+    background-size: 132px 30px;
+    height: 30px;
+    width: 132px;
+    margin:0 auto;
+    background-image: url("../images/watch_medium1.png");
+}
+.word .happy{
+    padding:20px 0;
+    font-size:46px;
+}
+
+
+/*----------------banner图下的小圆点--------------------------*/
+.circles{
+    width:112px;
+    height:8px;
+    margin:0 auto;
+    cursor:pointer;
+    position:absolute;
+    bottom:5px;
+    left:48%;
+}
+.circle{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#999;
+    margin:0 10px;
+    float:left;
+}
+.circle_change{
+    background:#fff;
+    border:1px solid #08c;
+}
+@media screen and (max-width:1024px) and (min-width:730px){
+    .background{
+        height:580px;
+    }
+    .banner{
+        height:580px;
+    }
+    .banner:nth-child(1){
+        background:#F7F7F7 url(../images/medium1.png) no-repeat center;
+        background-size:1400px;
+    }
+    .banner:nth-child(2){
+        background:#fff url(../images/medium2.jpg) no-repeat center 150px;
+        background-size: 800px;
+    }
+    .banner:nth-child(3){
+        background:#fff url(../images/medium3.jpg) no-repeat center 250px;
+        background-size: 800px;
+    }
+    .banner:nth-child(4){
+        background:#fff url(../images/large4.png) no-repeat center bottom;
+        background-size: 800px;
+    }
+    .banner:nth-child(5){
+        background:#F7F7F7 url(../images/medium1.png) no-repeat center;
+        background-size:1400px;
+    }
+    .apple_watch{
+        background-size: 132px 30px;
+        height: 30px;
+        width: 132px;
+        margin:0 auto;
+        background-image: url("../images/watch_small1.png");
+    }
+    .word .happy{
+        padding:20px 0;
+        font-size:38px;
+    }
+
+}
+@media screen and (min-width:1024px){
+    .background{
+        height:610px;
+    }
+    .banner{
+        height:610px;
+    }
+    .word h1{
+        font-size:61px;
+        line-height:100px;
+    }
+    .word h2{
+        font-size:28px;
+        line-height:40px;
+    }
+    .word span{
+        font-size:16px;
+        line-height:30px;
+    }
+    .banner:nth-child(1){
+        background:#F7F7F7 url(../images/large1.png) no-repeat center;
+        background-size: 1433px;
+    }
+    .banner:nth-child(2){
+        background:#fff url(../images/medium2.jpg) no-repeat center 150px;
+        background-size: 800px;
+    }
+    .banner:nth-child(3){
+        background:#fff url(../images/medium3.jpg) no-repeat center 250px;
+        background-size: 800px;
+    }
+    .banner:nth-child(4){
+        background:#fff url(../images/large4.png) no-repeat center bottom;
+        background-size: 800px;
+    }
+    .banner:nth-child(5){
+        background:#F7F7F7 url(../images/large1.png) no-repeat center;
+        background-size: 1433px;
+    }
+}
+/*---------------banner图下的列表---------------------------*/
+.height{
+    height:200px;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+}
+.height:nth-child(1){
+    background:url(../images/1.jpg) no-repeat center;
+    background-size: cover;
+}
+.height:nth-child(2){
+    background:url(../images/2.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+.height:nth-child(3){
+    background:url(../images/3.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+.height:nth-child(4){
+    background:url(../images/4.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+/*--------------footer列表-----------------------*/
+.center{
+    padding:10px 0;
+}
+.show{
+    padding:10px 0;
+    font-size:14px;
+}
+.center ul li{
+    padding:3px 0;
+    font-size:10px;
+}
+.click{
+    cursor:pointer;
+    font-weight:400;
+    font-size:14px;
+}
+
+
+
+
+
+.contactWay{
+    padding:30px 0;
+    font-size:10px;
+}
+.contactWay a:hover{
+    color:#333;
+    text-decoration: underline;
+}
+.way{
+    border-bottom:1px solid #e3e3e3;
+    padding:5px 0;
+}
+.way a{
+    color:#0088cc;
+}
+.address{
+    line-height:20px;
+}
+
+.address span{
+    float:left;
+}
+
+/*.note>div{
+    !*border-right:1px solid #e3e3e3;*!
+    color:#e3e3e3;
+}*/
+
+.address a{
+    color:#333;
+}
+.note:nth-child(4){
+    border:none;
+}
+.footer_logo{
+    float:right;
+}
+.footer_logo span{
+    float:left;
+    line-height:16px;
+}
+.footer_logo span:nth-child(1){
+    width:16px;
+    height:16px;
+    background:url(../images/footer_logo.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clear{
+    clear:both;
+}
+
+
+
+
+
+
+
